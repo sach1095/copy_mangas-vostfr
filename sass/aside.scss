@@ -1,0 +1,119 @@
+.aside{
+    grid-area: aside;
+    width: 27%;
+    margin-top: 35px;
+    margin-left: 20px;
+    width: 70%;
+}
+
+.aside_container{
+    background-color: #99ccff;
+    margin-bottom: 25px;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    h3{
+        margin-bottom: 20px;
+        color: #222;
+        font-family: 'Roboto Slab';
+        font-weight: 400;
+        font-size: 22px;
+    }
+}
+
+#aside_rechercher{
+    height: 190px;
+    background-color: #002c59;
+    h3{
+        color: #fff;
+    }
+    button{
+        background-color: #0274BE;
+        padding: 9px 0;
+        border: 0;
+        width: 100%;
+        height: 48px;
+        margin-top: 10px;
+        border-radius: 3px;
+        font-size: 13px;
+        color: #fff;
+        font-weight: normal;
+    }
+}
+
+#aside_input{
+    width: 100%;
+    background-color: #fff;
+    float: left;
+    padding: 15px 0;
+    text-indent: 10px;
+    color: #999;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+#aside_title_sorties{
+    float: left;
+    margin-bottom: 15px;
+}
+.DS{
+    text-align: center;
+}
+
+.aside_list{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Raleway';
+}
+
+#aside_list-1{
+    margin-block-start: 3em;
+}
+.aside_list-ep{
+    color: #660000;
+    display: block;
+    margin-bottom: 20px;
+}
+
+/* cration menu */
+.aside_menu{
+
+    li[tabindex]:before {
+        content:'+';
+        float: right;
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+        line-height:26px;
+        padding-right: 10px;
+        }
+        li:focus ul{
+        display:block;
+        }
+        li[tabindex]:focus:before {
+            content:'-';
+        }
+       li:focus{
+           pointer-events:none;
+        }
+       li ul{
+        display:none;
+        list-style-type: square;
+        margin-left: 17px;
+        margin-bottom: 7px;
+        }
+}
+
+.aside_menu > li {
+    background: #0050a0;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 7px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    line-height: 24px;
+}
