@@ -127,7 +127,6 @@ td:not([align]), th:not([align]) {
 
 .aside {
   grid-area: aside;
-  width: 27%;
   margin-top: 35px;
   margin-left: 20px;
   width: 70%;
@@ -245,7 +244,7 @@ td:not([align]), th:not([align]) {
 }
 
 body {
-  background-image: url(https://www.mangas-vostfr.pro/wp-content/themes/mts_schema_child/images/bgox.png);
+  background-image: url(../asset/img/img_back.png);
   display: grid;
   grid-template-areas: "header header" "nav nav" "article aside" "footer footer";
   grid-template-columns: 65% 35%;
@@ -261,7 +260,7 @@ body {
 
 .header {
   grid-area: header;
-  height: 160px;
+  height: 100%;
 }
 .header img {
   width: 100%;
@@ -302,9 +301,15 @@ nav a:hover {
   margin-left: 120px;
 }
 
-.section {
-  grid-area: section;
+.nav-720px {
+  background-color: blue;
+  color: white;
+  justify-content: center;
+}
+.nav-720px .nav_2 {
   display: flex;
+  justify-content: space-between;
+  width: 90%;
 }
 
 footer {
@@ -320,7 +325,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin-left: 150px;
+  margin-left: 100px;
 }
 
 #move-to-top {
@@ -339,6 +344,115 @@ footer {
   text-align: center;
   border-radius: 3px;
   font-size: 22px;
+}
+
+@media screen and (max-width: 2624px) {
+  .nav-720px {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+
+  .nav-720px {
+    display: none;
+  }
+
+  .header {
+    width: 100%;
+  }
+
+  .article {
+    margin-left: 30px;
+    width: 90%;
+    height: 1560px;
+  }
+
+  .aside {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .article {
+    height: 1430px;
+  }
+}
+@media screen and (max-width: 720px) {
+  body {
+    max-width: 770px;
+    width: 100%;
+    grid-template-columns: 85%;
+    grid-template-areas: "header" "nav-720px" "article" "aside" "footer";
+  }
+
+  .nav-720px {
+    display: flex;
+  }
+  .nav-720px i {
+    margin-top: 25px;
+  }
+
+  .article {
+    height: 96%;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav-720px {
+    grid-area: nav-720px;
+  }
+
+  .aside {
+    width: 100%;
+    margin-left: 70px;
+  }
+
+  .aside_container {
+    width: 75%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer_container {
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 440px) {
+  body {
+    max-width: 420px;
+    font-size: small;
+  }
+
+  .nav a {
+    padding: 10px;
+  }
+  .nav a i {
+    margin-right: 4px;
+  }
+  .nav a img {
+    width: 10px;
+    vertical-align: middle;
+  }
+
+  .nav_container {
+    margin-left: 0px;
+  }
+
+  .article {
+    margin-left: 30px;
+    width: 90%;
+  }
+
+  .aside {
+    width: 100%;
+    margin-left: 50px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

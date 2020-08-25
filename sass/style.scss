@@ -2,8 +2,9 @@
 @import "../sass/article.scss";
 @import "../sass/aside.scss";
 
+
 body{
-    background-image: url(https://www.mangas-vostfr.pro/wp-content/themes/mts_schema_child/images/bgox.png);
+    background-image: url(../asset/img/img_back.png);
     display: grid;
     grid-template-areas: 
     "header header"
@@ -11,6 +12,7 @@ body{
     "article aside"
     "footer footer";
     grid-template-columns: 65% 35%;
+    
 
     @media screen and (max-width:720px){
         grid-template-areas: 
@@ -27,7 +29,7 @@ body{
 
 .header{
     grid-area: header;
-    height: 160px;
+    height: 100%;
     img{
         width: 100%;
     }
@@ -70,10 +72,18 @@ nav{
     margin-left: 120px;
 }
 
-.section{
-    grid-area: section;
-    display: flex;
+.nav-720px{
+    background-color: blue;
+    color: white;
+    justify-content: center;
+    .nav_2{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+
+    }
 }
+
 footer{
     grid-area: footer;
     background-color: rgb(0,24,42);
@@ -87,7 +97,7 @@ footer{
  display: flex;
  justify-content: space-between;
  width: 80%;
- margin-left: 150px;
+ margin-left: 100px;
 }
 
 #move-to-top {
@@ -107,3 +117,4 @@ footer{
     border-radius: 3px;
     font-size: 22px;
 }
+@import "../sass/responsive.scss";
