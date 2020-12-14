@@ -2,16 +2,17 @@
 .article{
     grid-area: article;
     background-color: #99ccff;
-    width: 59%;
     padding: 4%;
-    width: 84%;
-    height: 70%;
+    width: 70%;
+    height: auto;
     margin-top: 35px;
-    margin-left: 135px;
+    margin-left: 28%;
+    margin-right: 20px;
+    margin-bottom: auto;
 }
 
 .article_post{
-    width: 100%;
+    width: auto;
     border-bottom: 10px solid #0059b2;
     margin-bottom: 15px;
     img{

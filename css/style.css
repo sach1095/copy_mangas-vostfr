@@ -50,16 +50,17 @@ td:not([align]), th:not([align]) {
 .article {
   grid-area: article;
   background-color: #99ccff;
-  width: 59%;
   padding: 4%;
-  width: 84%;
-  height: 70%;
+  width: 70%;
+  height: auto;
   margin-top: 35px;
-  margin-left: 135px;
+  margin-left: 28%;
+  margin-right: 20px;
+  margin-bottom: auto;
 }
 
 .article_post {
-  width: 100%;
+  width: auto;
   border-bottom: 10px solid #0059b2;
   margin-bottom: 15px;
 }
@@ -129,15 +130,19 @@ td:not([align]), th:not([align]) {
   grid-area: aside;
   margin-top: 35px;
   margin-left: 20px;
-  width: 70%;
+  width: 60%;
+  height: auto;
 }
 
 .aside_container {
   background-color: #99ccff;
   margin-bottom: 25px;
   padding: 20px;
-  height: 100%;
+  height: auto;
   box-sizing: border-box;
+}
+.aside_container img {
+  align-content: center;
 }
 .aside_container h3 {
   margin-bottom: 20px;
@@ -207,7 +212,7 @@ td:not([align]), th:not([align]) {
   margin-bottom: 20px;
 }
 
-/* cration menu */
+/* creation menu */
 .aside_menu li[tabindex]:before {
   content: "+";
   float: right;
@@ -269,7 +274,8 @@ body {
 .container {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: auto;
+  height: auto;
 }
 
 nav {
@@ -297,7 +303,7 @@ nav a:hover {
 
 .nav_container {
   float: left;
-  width: 100%;
+  width: auto;
   margin-left: 120px;
 }
 

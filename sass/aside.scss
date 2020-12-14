@@ -2,15 +2,19 @@
     grid-area: aside;
     margin-top: 35px;
     margin-left: 20px;
-    width: 70%;
+    width: 60%;
+    height: auto;
 }
 
 .aside_container{
     background-color: #99ccff;
     margin-bottom: 25px;
     padding: 20px;
-    height: 100%;
+    height: auto;
     box-sizing: border-box;
+    img{
+        align-content: center;
+    }
     h3{
         margin-bottom: 20px;
         color: #222;
@@ -78,7 +82,7 @@
     margin-bottom: 20px;
 }
 
-/* cration menu */
+/* creation menu */
 .aside_menu{
 
     li[tabindex]:before {
